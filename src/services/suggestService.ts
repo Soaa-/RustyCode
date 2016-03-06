@@ -120,7 +120,7 @@ export default class SuggestService {
         this.listeners.forEach(disposable => disposable.dispose());
         this.listeners = [];
     }
-    
+
     private clearCommandCallbacks(): void {
         this.commandCallbacks.forEach(callback => callback([]));
     }
